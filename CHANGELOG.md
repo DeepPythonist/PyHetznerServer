@@ -14,6 +14,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Planned: Firewall management
 - Planned: Floating IP management
 
+## [1.2.0] - 2025-06-26
+
+### 🚀 Professional PyPI Release
+- Successfully published to PyPI as `pyhetznerserver`
+- Package available for installation via `pip install pyhetznerserver`
+- Complete professional package structure with standard Python layout
+- All quality checks passed (twine check, pytest, imports)
+- Professional documentation and metadata
+- Ready for production use
+
+### 🔧 Technical Improvements
+- Optimized package build process
+- Verified compatibility across Python 3.7-3.12
+- Clean imports and proper module exports
+- Professional setuptools configuration
+
 ## [1.0.0] - 2024-06-26
 
 ### Added
