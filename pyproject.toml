@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyhetznerserver"
-version = "1.0.2"
+version = "1.0.3"
 description = "A modern, type-safe Python library for Hetzner Cloud Server management"
 readme = "README.md"
 license = {text = "MIT"}
@@ -31,8 +31,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8", 
+    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -43,7 +42,7 @@ classifiers = [
     "Topic :: Utilities",
     "Typing :: Typed"
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 dependencies = [
     "requests>=2.28.0",
     "typing-extensions>=4.0.0; python_version<'3.8'"

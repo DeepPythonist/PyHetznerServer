@@ -16,7 +16,7 @@ A modern, type-safe Python library for **Hetzner Cloud Server** management with 
 - **Comprehensive Error Handling** - Detailed exception hierarchy
 - **Automatic Model Parsing** - JSON responses automatically converted to Python objects
 - **Rate Limiting Aware** - Built-in handling of API rate limits
-- **Modern Python** - Supports Python 3.7+
+- **Modern Python** - Supports Python 3.8+
 
 ## 📦 Installation
 
