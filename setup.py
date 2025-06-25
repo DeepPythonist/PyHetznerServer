@@ -19,7 +19,7 @@ with open(os.path.join(this_directory, 'requirements.txt'), encoding='utf-8') as
 
 setup(
     name="pyhetznerserver",
-    version="1.0.0",
+    version="1.1.0",
     author="Mohammad Rasol Esfandiari",
     author_email="mrasolesfandiari@gmail.com",
     description="A modern, type-safe Python library for Hetzner Cloud Server management",

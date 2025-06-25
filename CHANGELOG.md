@@ -88,4 +88,32 @@ This is the first stable release of PyHetznerServer, providing complete coverage
 - **Testable**: Built-in dry-run mode for testing without actual API calls
 - **Maintainable**: Clean architecture with separate concerns for client, models, and managers
 
-The library has been thoroughly tested and is ready for production use in server management applications, infrastructure automation, and cloud resource management tools. 
+The library has been thoroughly tested and is ready for production use in server management applications, infrastructure automation, and cloud resource management tools.
+
+## [1.1.0] - 2025-06-26
+
+### 🏗️ Major Restructuring
+- **BREAKING CHANGE**: Restructured to standard Python package layout
+- Moved all source code to `pyhetznerserver/` package directory
+- Moved tests to separate `tests/` directory
+- Updated all imports and package configuration
+- Fixed `__init__.py` with proper exports for clean imports
+- Updated `pyproject.toml` for new package structure
+- Updated `Makefile` commands for new layout
+
+### ✅ Quality Improvements
+- All 24 tests pass with new structure
+- Follows Python packaging best practices
+- Ready for professional PyPI distribution
+- Improved modularity and separation of concerns
+- Clean import statements: `from pyhetznerserver import HetznerClient`
+
+### 📦 Package Standards
+- PEP-compliant package structure
+- Proper setuptools configuration
+- Professional directory organization
+- Clear separation between source code and tests
+
+## [1.0.3] - 2025-06-26
+
+### �� CI/CD Improvements 
