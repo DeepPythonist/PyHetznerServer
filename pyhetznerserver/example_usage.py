@@ -1,8 +1,8 @@
 try:
     from pyhetznerserver import HetznerClient, ServerNotFoundError, ValidationError
 except ImportError:
-    from __init__ import HetznerClient
-    from exceptions import ServerNotFoundError, ValidationError
+    from .client import HetznerClient
+    from .exceptions import ServerNotFoundError, ValidationError
 
 def main():
     client = HetznerClient(token="your_api_token_here", dry_run=True)

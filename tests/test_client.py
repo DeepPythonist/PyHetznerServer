@@ -10,8 +10,8 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-from client import HetznerClient
-from exceptions import (
+from pyhetznerserver.client import HetznerClient
+from pyhetznerserver.exceptions import (
     ValidationError,
     AuthenticationError,
     RateLimitError,

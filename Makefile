@@ -95,10 +95,10 @@ dev-setup: install-dev install-hooks ## setup development environment
 	@echo "Development environment setup complete!"
 
 run-example: ## run the example usage script
-	python example_usage.py
+	python -m pyhetznerserver.example_usage
 
 test-dry-run: ## run tests in dry-run mode
-	python test_basic.py
+	python -m pytest tests/test_basic.py -v
 
 check-all: lint type-check security test ## run all checks
 

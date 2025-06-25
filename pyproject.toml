@@ -77,12 +77,8 @@ Repository = "https://github.com/DeepPythonist/PyHetznerServer"
 Issues = "https://github.com/DeepPythonist/PyHetznerServer/issues"
 Changelog = "https://github.com/DeepPythonist/PyHetznerServer/blob/main/CHANGELOG.md"
 
-[tool.setuptools]
-packages = ["pyhetznerserver", "pyhetznerserver.models", "pyhetznerserver.managers"]
-include-package-data = true
-
-[tool.setuptools.package-dir]
-pyhetznerserver = "."
+[tool.setuptools.packages.find]
+exclude = ["tests*"]
 
 [tool.black]
 line-length = 100

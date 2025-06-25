@@ -1,13 +1,13 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 try:
     from pyhetznerserver import HetznerClient, ValidationError
 except ImportError:
-    from __init__ import HetznerClient
-    from exceptions import ValidationError
+    from pyhetznerserver.client import HetznerClient
+    from pyhetznerserver.exceptions import ValidationError
 
 def test_dry_run_mode():
     print("Testing dry run mode...")
