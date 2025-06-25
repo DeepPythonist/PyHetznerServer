@@ -36,7 +36,7 @@ from .models.nested import (
 )
 from .models.server import Server
 
-__version__ = "1.2.2"
+__version__ = "1.2.3"
 __author__ = "Mohammad Rasol Esfandiari"
 __email__ = "mrasolesfandiari@gmail.com"
 __license__ = "MIT"
@@ -47,7 +47,7 @@ __all__ = [
     "HetznerClient",
     # Exceptions
     "HetznerAPIError",
-    "AuthenticationError",
+    "AuthenticationError", 
     "ValidationError",
     "ServerNotFoundError",
     "RateLimitError",
@@ -59,11 +59,11 @@ __all__ = [
     "ServerType",
     "Datacenter",
     "Location",
-    "Image",
+    "Image", 
     "ISO",
     "Protection",
     "PublicNet",
     "PrivateNet",
     "IPv4",
     "IPv6",
-]
+] 

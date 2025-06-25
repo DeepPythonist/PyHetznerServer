@@ -68,7 +68,7 @@ jobs:
         ls -la tests/ || echo "No tests directory"
         echo "Python path:"
         python -c "import sys; print(sys.path)"
-        
+    
     - name: Test with pytest
       run: |
         python -m pytest --cov=pyhetznerserver --cov-report=xml --cov-report=term-missing --verbose
