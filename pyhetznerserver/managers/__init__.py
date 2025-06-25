@@ -3,4 +3,4 @@ try:
 except ImportError:
     from server_manager import ServerManager
 
-__all__ = ["ServerManager"] 
+__all__ = ["ServerManager"]

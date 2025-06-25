@@ -1,9 +1,10 @@
-from typing import Dict, Any, List, Optional
+from typing import Any, Dict, List, Optional
 
 try:
     from .base import BaseObject
 except ImportError:
     from base import BaseObject
+
 
 class ServerType(BaseObject):
     id: int
@@ -19,6 +20,7 @@ class ServerType(BaseObject):
     architecture: str
     deprecation: Optional[Dict]
 
+
 class Location(BaseObject):
     id: int
     name: str
@@ -29,17 +31,19 @@ class Location(BaseObject):
     longitude: float
     network_zone: str
 
+
 class Datacenter(BaseObject):
     id: int
     name: str
     description: str
     location: Location
     server_types: Dict
-    
+
     def _parse_data(self, data: Dict[str, Any]):
         super()._parse_data(data)
-        if hasattr(self, 'location') and isinstance(self.location, dict):
+        if hasattr(self, "location") and isinstance(self.location, dict):
             self.location = Location(self.location, self._client)
+
 
 class Image(BaseObject):
     id: int
@@ -61,11 +65,13 @@ class Image(BaseObject):
     labels: Dict
     architecture: str
 
+
 class IPv4(BaseObject):
     id: int
     ip: str
     blocked: bool
     dns_ptr: str
+
 
 class IPv6(BaseObject):
     id: int
@@ -73,24 +79,27 @@ class IPv6(BaseObject):
     blocked: bool
     dns_ptr: List[Dict]
 
+
 class PublicNet(BaseObject):
     ipv4: IPv4
     ipv6: IPv6
     floating_ips: List[int]
     firewalls: List[Dict]
-    
+
     def _parse_data(self, data: Dict[str, Any]):
         super()._parse_data(data)
-        if hasattr(self, 'ipv4') and isinstance(self.ipv4, dict):
+        if hasattr(self, "ipv4") and isinstance(self.ipv4, dict):
             self.ipv4 = IPv4(self.ipv4, self._client)
-        if hasattr(self, 'ipv6') and isinstance(self.ipv6, dict):
+        if hasattr(self, "ipv6") and isinstance(self.ipv6, dict):
             self.ipv6 = IPv6(self.ipv6, self._client)
+
 
 class PrivateNet(BaseObject):
     network: int
     ip: str
     alias_ips: List[str]
     mac_address: str
+
 
 class ISO(BaseObject):
     id: int
@@ -99,6 +108,7 @@ class ISO(BaseObject):
     type: str
     deprecated: Optional[str]
 
+
 class Protection(BaseObject):
     delete: bool
-    rebuild: bool 
+    rebuild: bool

@@ -1,19 +1,19 @@
 try:
     from .base import BaseObject
+    from .nested import Datacenter, Image, Location, PrivateNet, PublicNet, ServerType
     from .server import Server
-    from .nested import ServerType, Datacenter, Location, Image, PublicNet, PrivateNet
 except ImportError:
     from base import BaseObject
+    from nested import Datacenter, Image, Location, PrivateNet, PublicNet, ServerType
     from server import Server
-    from nested import ServerType, Datacenter, Location, Image, PublicNet, PrivateNet
 
 __all__ = [
-    "BaseObject", 
+    "BaseObject",
     "Server",
     "ServerType",
-    "Datacenter", 
+    "Datacenter",
     "Location",
     "Image",
     "PublicNet",
-    "PrivateNet"
-] 
+    "PrivateNet",
+]
